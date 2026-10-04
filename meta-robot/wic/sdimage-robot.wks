@@ -4,4 +4,4 @@
 # a USB storage device instead of microSD.
 
 part /boot --source bootimg-partition --ondisk sda --fstype=vfat --label boot --active --align 4096 --size 100
-part / --source rootfs --ondisk sda --fstype=ext4 --label root --align 4096
+part / --source rootfs --ondisk sda --fstype=ext4 --label root --align 4096 --extra-space 4096M --overhead-factor 1.0
